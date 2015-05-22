@@ -1,0 +1,15 @@
+{
+    "name": "Until",
+    "description": "Are we there yet?",
+    "author": "Chris Nager <cnager@gmail.com> (http://chrisnager.com)",
+    "version": "0.1.0",
+    "dependencies": {
+        "basscss": "^6.0.2",
+        "firebase": "^2.2.4",
+        "flickity": "^1.0.0",
+        "moment": "^2.10.2",
+        "normalize.css": "^3.0.3",
+        "react": "^0.13.2",
+        "reactfire": "^0.4.0"
+    }
+}

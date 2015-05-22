@@ -1,0 +1,24 @@
+.border-box { box-sizing: border-box }
+.max-width-25 { max-width: 25rem }
+.full-height { height: 100% }
+.height-inherit { height: inherit }
+.sans-serif { font-family: "Avenir Next", sans-serif }
+.font-family-inherit { font-family: inherit }
+button,
+.button { font-weight: 600 }
+
+.flickity-page-dots { bottom: 2rem }
+.flickity-page-dots .dot { background-color: #fff }
+.flickity-page-dots .dot:last-of-type {
+    box-sizing: border-box;
+    border: 3px double #fff;
+    background-color: transparent;
+}
+
+input[type=date] {
+    box-sizing: border-box;
+    height: 2.25rem;
+    padding: .5rem .5rem;
+    vertical-align: middle;
+    -webkit-appearance: none;
+}

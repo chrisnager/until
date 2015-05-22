@@ -1,3 +1,22 @@
+# Until
+
+Are we there yet?
+
+## Credit where it's due
+
+__Until__ would not be possible without these outstanding resources:
+
+[normalize.css](//necolas.github.io/normalize.css)
+[basscss](//basscss.com)
+[react](//facebook.github.io/react)
+[firebase](//www.firebase.com)
+[reactfire](//github.com/firebase/reactfire)
+[moment](//momentjs.com)
+[flickity](//flickity.metafizzy.co)
+
+
+## License
+
 The MIT License (MIT)
 
 Copyright (c) 2015 Chris Nager
@@ -19,4 +38,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
