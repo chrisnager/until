@@ -1,7 +1,7 @@
 var List = React.createClass({
     handleClick: function(key) {
         if (this.props.onClick) {
-            this.props.onClick(key);
+            this.props.onClick(key)
         }
     },
 
@@ -27,14 +27,28 @@ var List = React.createClass({
         return days + 1 + ' days until'
     },
 
+    sortByDate: function(a, b) {
+        if (a.date < b.date) {
+            return -1
+        }
+
+        if (a.date > b.date) {
+            return 1
+        }
+
+        return 0;
+    },
+
     render: function() {
-        var that = this;
+        var that = this
+
         var styles = {
             galleryCell: 'border-box full-width border-bottom p3 black bg-aqua',
             galleryCellInner: 'max-width-25 mx-auto'
         }
+
         var createItem = function(item, index) {
-            var boundClick = that.handleClick.bind(that, item['$id']);
+            var boundClick = that.handleClick.bind(that, item['$id'])
 
             return(
                 <div className={styles.galleryCell} id={'gallery-cell-' + item['$id']} key={ item['$id'] }>
@@ -45,11 +59,13 @@ var List = React.createClass({
                     </div>
                 </div>
             )
-        };
+        }
 
-        return <div>{this.props.items.map(createItem)}</div>;
+        this.props.items.sort(this.sortByDate)
+
+        return <div>{this.props.items.map(createItem)}</div>
     }
-});
+})
 
 var Form = React.createClass({
     render: function() {
